@@ -1,4 +1,5 @@
 ﻿using Microsoft.SemanticKernel;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using System.Text;
 
@@ -45,5 +46,18 @@ public class JiraPlugin
 
         var response = await _client.ExecuteAsync(request);
         return response.Content ?? "";
+    }
+    [KernelFunction]
+    public async Task<string> GetAcceptanceCriteria(string issueKey)
+    {
+        var base64Auth = Convert.ToBase64String(Encoding.ASCII.GetBytes($"{_username}:{_apiToken}"));
+        var request = new RestRequest($"/rest/api/2/issue/{issueKey}", Method.Get);
+        request.AddHeader("Authorization", $"Basic {base64Auth}");
+
+        var response = await _client.ExecuteAsync(request);
+        var json = JObject.Parse(response.Content);
+        var criteria = json["fields"]?["customfield_10031"]?.ToString(); // Update field ID accordingly
+
+        return criteria ?? "No acceptance criteria found.";
     }
 }

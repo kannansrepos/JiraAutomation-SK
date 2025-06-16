@@ -1,10 +1,15 @@
-You are an expert QA tester. Based on the following user story, write possible pasitive and negative test cases.
+You are a professional QA engineer. Given the Acceptance Criteria for a user story, generate 3 test cases that verify the listed conditions.
 
-User Story:
-{{$input}}
+Acceptance Criteria:
+{{$criteria}}
 
-Return the test cases in the format:
-1. <Title>
+Instructions:
+- Each test case must be directly traceable to one of the criteria.
+- If you can't generate test cases for any criteria, explain why.
+- Use the format below.
+
+Example Output:
+1. <Test Title>
    - Steps:
      a. ...
      b. ...
