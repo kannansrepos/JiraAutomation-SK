@@ -1,0 +1,11 @@
+You are an expert QA tester. Based on the following user story, write possible pasitive and negative test cases.
+
+User Story:
+{{$input}}
+
+Return the test cases in the format:
+1. <Title>
+   - Steps:
+     a. ...
+     b. ...
+   - Expected Result: ...

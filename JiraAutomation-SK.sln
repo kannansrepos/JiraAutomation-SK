@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiraAutomation-SK", "JiraAutomation-SK.csproj", "{453D8DAA-2B18-4A2F-A4F3-9BBC1A12E0CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{453D8DAA-2B18-4A2F-A4F3-9BBC1A12E0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453D8DAA-2B18-4A2F-A4F3-9BBC1A12E0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453D8DAA-2B18-4A2F-A4F3-9BBC1A12E0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453D8DAA-2B18-4A2F-A4F3-9BBC1A12E0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CD8F6AE-FAF5-4DE3-8082-E2D23AAC09A8}
+	EndGlobalSection
+EndGlobal

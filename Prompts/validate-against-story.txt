@@ -1,0 +1,9 @@
+﻿Given the following Jira user story and code diff, validate if the code addresses the requirement.
+
+User Story:
+{{story}}
+
+Code Diff:
+{{code}}
+
+Respond with "Valid ✅" or "Invalid ❌" and explain why.
